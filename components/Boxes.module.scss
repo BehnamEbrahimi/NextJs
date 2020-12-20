@@ -1,0 +1,11 @@
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+}

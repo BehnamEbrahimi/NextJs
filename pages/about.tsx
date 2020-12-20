@@ -6,6 +6,7 @@ import {
   aboutTranslationKeys,
 } from "../contexts/TranslationsContexts";
 import Layout from "../components/Layout";
+import Main from "../components/Main";
 
 const About = ({ t }: { readonly t: TFunction }) => {
   return (
@@ -13,7 +14,7 @@ const About = ({ t }: { readonly t: TFunction }) => {
       <AboutTranslationContext.Provider
         value={translator(t, aboutTranslationKeys) as any}
       >
-        <p>{t("text")}</p>
+        <Main />
       </AboutTranslationContext.Provider>
     </Layout>
   );

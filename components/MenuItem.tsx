@@ -5,7 +5,7 @@ import styles from "./MenuItem.module.scss";
 interface Props {
   text: string;
   to: string;
-  active?: boolean;
+  active: boolean;
 }
 
 const MenuItem: NextPage<Props> = ({ text, to, active }) => {

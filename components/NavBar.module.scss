@@ -4,17 +4,28 @@
   justify-content: space-between;
 }
 
-.list {
+.wrapper ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
 }
 
-.list-item {
+.wrapper li {
   display: inline;
   padding: 0 20px 0 20px;
 }
 
-.logo {
+.wrapper h1 {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .wrapper ul {
+    justify-content: space-around;
+  }
 }

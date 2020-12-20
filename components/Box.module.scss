@@ -1,0 +1,15 @@
+.wrapper {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.wrapper img {
+  width: 90px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}

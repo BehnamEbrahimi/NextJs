@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { NextPage } from "next";
-import styles from "./Showcase.module.scss";
 import { HomeTranslationContext } from "../contexts/TranslationsContexts";
+import styles from "./Showcase.module.scss";
 
 interface Props {}
 
@@ -9,7 +9,7 @@ const Showcase: NextPage<Props> = () => {
   const homeTranslationContext = useContext(HomeTranslationContext);
 
   return (
-    <section>
+    <section className={styles.wrapper}>
       <div className="container">
         <h1>{homeTranslationContext.slogan}</h1>
         <p>{homeTranslationContext.text}</p>

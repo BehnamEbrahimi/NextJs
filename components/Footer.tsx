@@ -6,6 +6,7 @@ import {
   FooterTranslationContext,
   footerTranslationKeys,
 } from "../contexts/TranslationsContexts";
+import styles from "./Footer.module.scss";
 
 interface Props {
   readonly t: TFunction;
@@ -15,7 +16,7 @@ const Footer: NextPage<Props> = ({ t }) => (
   <FooterTranslationContext.Provider
     value={translator(t, footerTranslationKeys) as any}
   >
-    <footer>
+    <footer className={styles.wrapper}>
       <p>{t("text")}</p>
     </footer>
   </FooterTranslationContext.Provider>

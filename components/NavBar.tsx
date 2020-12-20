@@ -14,20 +14,20 @@ const NavBar: NextPage<Props> = () => {
   return (
     <div className={`container ${styles.wrapper}`}>
       <div>
-        <h1 className={styles.logo}>
+        <h1>
           <span className="highlight">Title</span> and Logo
         </h1>
       </div>
       <nav>
-        <ul className={styles.list}>
-          <li className={styles["list-item"]}>
+        <ul>
+          <li>
             <MenuItem
               text={headerTranslationContext["back-to-home"]}
               to="/"
               active={router.pathname === "/"}
             />
           </li>
-          <li className={styles["list-item"]}>
+          <li>
             <MenuItem
               text={headerTranslationContext["go-to-about"]}
               to="/about"

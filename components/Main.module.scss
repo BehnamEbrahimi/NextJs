@@ -1,0 +1,18 @@
+.wrapper article {
+  float: left;
+  width: 65%;
+}
+
+.wrapper aside {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapper article,
+  .wrapper aside {
+    float: none;
+    width: 100%;
+  }
+}

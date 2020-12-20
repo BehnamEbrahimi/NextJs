@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import styles from "./Box.module.scss";
 
 interface Props {
@@ -11,8 +10,8 @@ interface Props {
 
 const Box: NextPage<Props> = ({ title, desc, imagePath, imageAlt }) => {
   return (
-    <div>
-      <Image src={imagePath} alt={imageAlt} width={500} height={500} />
+    <div className={styles.wrapper}>
+      <img src={imagePath} alt={imageAlt} />
       <h3>{title}</h3>
       <p>{desc}</p>
     </div>
