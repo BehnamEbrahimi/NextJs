@@ -1,11 +1,22 @@
+import { TFunction } from "next-i18next";
+import { withTranslation } from "../i18n";
+import translator from "../utils/translator";
+import {
+  NotFoundTranslationContext,
+  notFoundTranslationKeys,
+} from "../contexts/TranslationsContexts";
 import Layout from "../components/Layout";
 
-const Custom404 = () => {
+const Custom404 = ({ t }: { readonly t: TFunction }) => {
   return (
     <Layout title="Error">
-      <h1>My 404 - Page Not Found</h1>
+      <NotFoundTranslationContext.Provider
+        value={translator(t, notFoundTranslationKeys) as any}
+      >
+        <h1>{t("msg")}</h1>
+      </NotFoundTranslationContext.Provider>
     </Layout>
   );
 };
 
-export default Custom404;
+export default withTranslation("404")(Custom404);

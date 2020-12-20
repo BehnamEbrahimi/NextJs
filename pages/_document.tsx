@@ -15,11 +15,12 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
-          <meta name="description" content="Best site" />
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width" />
+          <meta name="description" content="Best site" />
+          <meta name="keywords" content="kw1, kw2, kw3" />
+          <meta name="author" content="Behnam Ebrahimi" />
         </Head>
         <body>
           <Main />
