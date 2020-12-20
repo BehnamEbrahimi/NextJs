@@ -1,4 +1,10 @@
 {
     "slogan": "Best company you can find!",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, laborum? Praesentium empora in, similique architecto cupiditate esse maxime ducimus voluptas natus perspiciatis possimus, beatae accusamus reprehenderit libero? Neque, aspernatur corrupti!"
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, laborum? Praesentium empora in, similique architecto cupiditate esse maxime ducimus voluptas natus perspiciatis possimus, beatae accusamus reprehenderit libero? Neque, aspernatur corrupti!",
+    "box_1_title": "Box 1",
+    "box_2_title": "Box 2",
+    "box_3_title": "Box 3",
+    "box_1_desc": "Lorem 1 ipsum dolor sit amet consectetur adipisicing elit.",
+    "box_2_desc": "Lorem 2 ipsum dolor sit amet consectetur adipisicing elit.",
+    "box_3_desc": "Lorem 3 ipsum dolor sit amet consectetur adipisicing elit."
 }

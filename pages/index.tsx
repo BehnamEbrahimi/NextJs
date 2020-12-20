@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TFunction } from "next-i18next";
 import { withTranslation } from "../i18n";
 import translator from "../utils/translator";
@@ -8,6 +7,7 @@ import {
 } from "../contexts/TranslationsContexts";
 import Layout from "../components/Layout";
 import Showcase from "../components/Showcase";
+import Boxes from "../components/Boxes";
 
 const LandingPage = ({ t }: { readonly t: TFunction }) => {
   return (
@@ -16,12 +16,7 @@ const LandingPage = ({ t }: { readonly t: TFunction }) => {
         value={translator(t, homeTranslationKeys) as any}
       >
         <Showcase />
-        <Image
-          src="/static/images/yoda.jpg"
-          alt="Yoda"
-          width={500}
-          height={500}
-        />
+        <Boxes />
       </HomeTranslationContext.Provider>
     </Layout>
   );

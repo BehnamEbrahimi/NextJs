@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { NextPage } from "next";
+import styles from "./Showcase.module.scss";
 import { HomeTranslationContext } from "../contexts/TranslationsContexts";
 
 interface Props {}

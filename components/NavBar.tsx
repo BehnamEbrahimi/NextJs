@@ -25,7 +25,6 @@ const NavBar: NextPage<Props> = () => {
               <a>{headerTranslationContext["go-to-about"]}</a>
             </Link>
           </li>
-          <li></li>
         </ul>
       </nav>
     </div>
