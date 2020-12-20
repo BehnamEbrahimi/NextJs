@@ -1,8 +1,24 @@
-.error {
-  color: red;
-  background-color: white;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
-.important {
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  color: #e8491d !important;
   font-weight: bold;
 }

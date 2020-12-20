@@ -1,29 +1,47 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NextPage } from "next";
-import { Link } from "../i18n";
 import { HeaderTranslationContext } from "../contexts/TranslationsContexts";
+import styles from "./NavBar.module.scss";
+import MenuItem from "./MenuItem";
 
 interface Props {}
 
 const NavBar: NextPage<Props> = () => {
   const headerTranslationContext = useContext(HeaderTranslationContext);
+  const [activeTab, setActiveTab] = useState("home");
 
   return (
-    <div className="container">
-      <div id="branding">
-        <h1>Tile and Logo</h1>
+    <div className={`container ${styles.wrapper}`}>
+      <div>
+        <h1 className={styles.logo}>
+          <span className="highlight">Title</span> and Logo
+        </h1>
       </div>
       <nav>
-        <ul>
-          <li>
-            <Link href="/">
-              <a>{headerTranslationContext["back-to-home"]}</a>
-            </Link>
+        <ul className={styles.list}>
+          <li
+            className={styles["list-item"]}
+            onClick={() => {
+              setActiveTab("home");
+            }}
+          >
+            <MenuItem
+              text={headerTranslationContext["back-to-home"]}
+              to="/"
+              active={activeTab === "home"}
+            />
           </li>
-          <li>
-            <Link href="/about">
-              <a>{headerTranslationContext["go-to-about"]}</a>
-            </Link>
+          <li
+            className={styles["list-item"]}
+            onClick={() => {
+              setActiveTab("about");
+            }}
+          >
+            <MenuItem
+              text={headerTranslationContext["go-to-about"]}
+              to="/about"
+              active={activeTab === "about"}
+            />
           </li>
         </ul>
       </nav>

@@ -6,6 +6,7 @@ import {
   HeaderTranslationContext,
   headerTranslationKeys,
 } from "../contexts/TranslationsContexts";
+import styles from "./Header.module.scss";
 import NavBar from "./NavBar";
 import TopBar from "./TopBar";
 
@@ -18,7 +19,7 @@ const Header: NextPage<Props> = ({ t }) => {
     <HeaderTranslationContext.Provider
       value={translator(t, headerTranslationKeys) as any}
     >
-      <header>
+      <header className={styles.wrapper}>
         <TopBar />
         <NavBar />
       </header>
