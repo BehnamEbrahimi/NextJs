@@ -16,7 +16,7 @@ const Footer: NextPage<Props> = ({ t }) => (
     value={translator(t, footerTranslationKeys) as any}
   >
     <footer>
-      <p>{t("description")}</p>
+      <p>{t("text")}</p>
     </footer>
   </FooterTranslationContext.Provider>
 );
